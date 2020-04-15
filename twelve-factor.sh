@@ -10,4 +10,5 @@ export DB_UNAME=$(vault kv get -field=username secret/twelve-factor)
 export DB_URL=jdbc:postgresql://localhost:5432/twelve_factor1
 export SERVER_PORT=8888
 
+#run app
 ./gradlew bootRun
